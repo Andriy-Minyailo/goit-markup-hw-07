@@ -666,16 +666,8 @@ li .address__contact {
   transform: translate(-50%, -50%) scale(1.25) skew(30deg, 30deg);
   box-shadow: none;
 }
-.modal-title {
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  color: var(--primary-text-title);
-}
 
-.modal-close {
+.modal__close {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -691,27 +683,34 @@ li .address__contact {
   color: var(--logo-header-end-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close:hover,
-.modal-close:focus {
+.modal__close:hover,
+.modal__close:focus {
   color: var(--accent-color);
 }
-
-.icon-close {
+.modal__icon-close {
   fill: currentColor;
 }
+.modal__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--primary-text-title);
+}
 
-.input-container {
+.modal__container {
   position: relative;
   color: var(--primary-text-title);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 4px;
   margin-bottom: 10px;
 }
-.input-container:focus-within {
+.modal__container:focus-within {
   color: var(--accent-color);
 }
 
-.input-form {
+.modal__input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -720,18 +719,18 @@ li .address__contact {
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-form:focus-within {
+.modal__input:focus-within {
   border-color: var(--accent-color);
   outline: none;
 }
-.icon-modal-input {
+.modal__icon {
   position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
   fill: currentColor;
 }
-.coment-form {
+.modal__coment {
   width: 100%;
   height: 120px;
   resize: none;
@@ -741,7 +740,7 @@ li .address__contact {
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.coment-form::placeholder {
+.modal__coment::placeholder {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -749,11 +748,11 @@ li .address__contact {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.coment-form:focus-within {
+.modal__coment:focus-within {
   border-color: var(--accent-color);
   outline: none;
 }
-.politico-form {
+.modal__politico {
   position: relative;
   display: flex;
   justify-content: left;
@@ -761,42 +760,43 @@ li .address__contact {
   align-items: center;
   margin-top: 20px;
 }
-.input-check:checked ~ .icon-check {
-  opacity: 1;
-}
-.input-check:checked ~ .icon-now-check {
-  opacity: 0;
-}
-.icon-check {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon-now-check {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.pilitico-label {
+.modal__pilitico-label {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
 }
-.politico-link {
+
+.modal__icon-check {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__icon-now-check {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__input-check:checked ~ .modal__icon-check {
+  opacity: 1;
+}
+.modal__input-check:checked ~ .modal__icon-now-check {
+  opacity: 0;
+}
+
+.modal__politico-link {
   position: relative;
   color: var(--accent-color);
   text-decoration: none;
 }
-.politico-link::after {
+.modal__politico-link::after {
   content: "";
   position: absolute;
   right: 0;
@@ -806,7 +806,7 @@ li .address__contact {
   height: 1px;
   background-color: var(--accent-color);
 }
-.botton-form {
+.modal__botton {
   display: block;
   width: 200px;
   height: 50px;
