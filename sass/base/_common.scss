@@ -1,0 +1,19 @@
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.lists {
+    display: flex;
+    list-style: none;
+}
+body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: #ffffff;
+}
