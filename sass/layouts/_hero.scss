@@ -9,11 +9,13 @@
     background-position: center;
     background-size: cover;
     background-color: var(--hero-footer-backgroun-color);
+
+    & .container {
+            padding: 200px 0;
+        }
 }
 
-.hero .container {
-    padding: 200px 0;
-}
+
 
 .hero__title {
     max-width: 696px;

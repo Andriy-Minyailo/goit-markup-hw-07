@@ -1,10 +1,12 @@
 .work__list {
     width: calc((100% - 60px) / 3);
+
+    &:not(:last-child) {
+            margin-right: var(--margin30px);
+        }
 }
 
-.work__list:not(:last-child) {
-    margin-right: var(--margin30px);
-}
+
 
 .work__titel {
     margin-bottom: 50px;

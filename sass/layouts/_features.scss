@@ -2,12 +2,13 @@
     padding-bottom: 0;
 }
 
-.features__list:not(:last-child) {
-    margin-right: var(--margin30px);
-}
+
 
 .features__list {
     width: calc((100% - 90px) / 4);
+    &:not(:last-child) {
+            margin-right: var(--margin30px);
+        }
 }
 
 .features__container-icon {
