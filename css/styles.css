@@ -146,7 +146,7 @@ body {
   transform: scale(100%);
 }
 
-.contact {
+.header__contact {
   margin-left: auto;
 }
 .contact {
@@ -331,8 +331,10 @@ body {
   color: var(--primary-text-color);
 }
 
-.list-social {
+.team__list-social {
   margin-top: 16px;
+}
+.list-social {
   padding: 0 32px;
 }
 .list-social__network {
@@ -361,9 +363,10 @@ body {
   color: var(--primary-backgroun-color);
   background-color: var(--accent-color);
 }
-
-.client__title {
+.client__company {
   margin-bottom: 50px;
+}
+.client__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -408,9 +411,10 @@ body {
 .footer .container {
   display: flex;
 }
-
-.address {
+.footer__address {
   margin-top: 20px;
+}
+.address {
   font-style: normal;
   color: var(--primary-backgroun-color);
 }
@@ -536,9 +540,11 @@ li .address__contact {
 }
 
 /* _____________________портфоліо */
+.portfolio__filter {
+  margin-bottom: 50px;
+}
 .filter {
   justify-content: center;
-  margin-bottom: 50px;
 }
 .filter > li:not(:last-child) {
   margin-right: 8px;
