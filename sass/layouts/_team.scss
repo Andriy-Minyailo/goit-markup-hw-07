@@ -3,10 +3,8 @@
 }
 
 .team__title {
+    @include font(700, 36, 1.17, null);
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
     text-align: center;
     color: var(--primary-text-title);
 }
@@ -25,18 +23,15 @@
 }
 
 .card__name {
+    @include font(500, 16, 1.19, null);
     margin-top: var(--margin30px);
     margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
     text-align: center;
     color: var(--primary-text-title);
 }
 
 .card__job {
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(null, 16, 1.19, null);
     text-align: center;
     color: var(--primary-text-color);
 }
@@ -59,9 +54,7 @@
 }
 
 .list-social__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
     width: 100%;
     height: 100%;
     border-radius: 50%;

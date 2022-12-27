@@ -1,3 +1,25 @@
+:root {
+  --primary-text-color: #757575;
+  --primary-text-title: #212121;
+  --accent-color: #2196f3;
+  --logo-header-end-color: #000000;
+  --second-backgroun-color: #f5f4fa;
+  --hero-footer-backgroun-color: #2f303a;
+  --primary-backgroun-color: #ffffff;
+  --margin30px: 30px;
+}
+
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+}
+
 p,
 h1,
 h2,
@@ -63,10 +85,11 @@ img {
 }
 
 .nav__list {
-  display: flex;
   font-weight: 500;
+  font-size: px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
   list-style: none;
 }
 .nav__list li + li {
@@ -125,10 +148,11 @@ img {
 }
 
 .contact {
-  display: flex;
   font-weight: 500;
+  font-size: px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
   list-style: none;
 }
 .contact li + li {
@@ -154,10 +178,10 @@ img {
 
 .logo {
   font-family: "Raleway", "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  font-style: normal;
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -233,15 +257,14 @@ li .address__contact {
   width: 44px;
   height: 44px;
 }
-
 .our-social__list:not(:last-child) {
   margin-right: 10px;
 }
 
 .our-social__link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   color: var(--primary-backgroun-color);
@@ -249,9 +272,7 @@ li .address__contact {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.our-social__link:hover,
-.our-social__link:focus {
+.our-social__link:hover, .our-social__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -268,10 +289,10 @@ li .address__contact {
 }
 
 .subscription__text {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  font-style: normal;
   text-transform: uppercase;
   color: var(--primary-backgroun-color);
   margin-bottom: 20px;
@@ -289,39 +310,40 @@ li .address__contact {
   color: var(--primary-backgroun-color);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .subscription__input:focus-within {
   border-color: var(--accent-color);
 }
-
 .subscription__input::-moz-placeholder {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .subscription__input:-ms-input-placeholder {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .subscription__input::placeholder {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .subscription__button {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  font-style: normal;
   width: 200px;
   height: 50px;
   margin-left: 12px;
@@ -330,11 +352,6 @@ li .address__contact {
   background-color: var(--accent-color);
   border: none;
   cursor: pointer;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
   color: var(--primary-backgroun-color);
 }
 
@@ -350,11 +367,11 @@ li .address__contact {
 }
 
 .filter__button {
-  padding: 6px 22px;
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  padding: 6px 22px;
+  font-family: inherit;
   text-align: center;
   border-radius: 4px;
   border: none;
@@ -401,8 +418,8 @@ li .address__contact {
 
 .modal__close {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -476,27 +493,27 @@ li .address__contact {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__coment::-moz-placeholder {
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  font-style: normal;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal__coment:-ms-input-placeholder {
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  font-style: normal;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal__coment::placeholder {
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  font-style: normal;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal__coment:focus-within {
@@ -514,6 +531,9 @@ li .address__contact {
 }
 
 .modal__pilitico-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -565,18 +585,18 @@ li .address__contact {
 
 .modal__botton {
   display: block;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -606,31 +626,31 @@ li .address__contact {
 }
 
 .hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06;
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: var(--margin30px);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-backgroun-color);
 }
 
 .hero__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06;
   display: inherit;
   padding: 10px 24px;
   margin-left: auto;
   margin-right: auto;
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   border-radius: 4px;
   cursor: pointer;
   color: var(--primary-backgroun-color);
@@ -652,6 +672,8 @@ li .address__contact {
 
 .features__container-icon {
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 25px 100px;
   margin-bottom: var(--margin30px);
   justify-content: center;
@@ -660,9 +682,10 @@ li .address__contact {
 }
 
 .features__titel {
-  margin-bottom: 10px;
   font-weight: 700;
-  line-height: 1.14;
+  font-size: px;
+  line-height: 1.41;
+  margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--primary-text-title);
 }
@@ -675,10 +698,10 @@ li .address__contact {
 }
 
 .work__titel {
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  margin-bottom: 50px;
   text-align: center;
   color: var(--primary-text-title);
 }
@@ -688,6 +711,9 @@ li .address__contact {
 }
 
 .work__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
   display: block;
   position: absolute;
   bottom: 0;
@@ -695,9 +721,6 @@ li .address__contact {
   width: 100%;
   padding-top: 27px;
   padding-bottom: 27px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
   color: var(--primary-backgroun-color);
@@ -709,10 +732,10 @@ li .address__contact {
 }
 
 .team__title {
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  margin-bottom: 50px;
   text-align: center;
   color: var(--primary-text-title);
 }
@@ -729,11 +752,11 @@ li .address__contact {
 }
 
 .card__name {
-  margin-top: var(--margin30px);
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-top: var(--margin30px);
+  margin-bottom: 10px;
   text-align: center;
   color: var(--primary-text-title);
 }
@@ -763,8 +786,8 @@ li .address__contact {
 
 .list-social__link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -801,8 +824,8 @@ li .address__contact {
 
 .company__link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 16px 32px;
   width: 100%;
   height: 100%;
@@ -857,6 +880,9 @@ li .address__contact {
 }
 
 .projects__text-hover {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -865,9 +891,6 @@ li .address__contact {
   padding: 63px 24px;
   transform: translateY(100%);
   overflow: auto;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--primary-backgroun-color);
   background-color: rgba(33, 150, 243, 0.9);
@@ -881,6 +904,10 @@ li .address__contact {
 }
 
 .projects__titel {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -893,26 +920,4 @@ li .address__contact {
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
-}
-
-:root {
-  --primary-text-color: #757575;
-  --primary-text-title: #212121;
-  --accent-color: #2196f3;
-  --logo-header-end-color: #000000;
-  --second-backgroun-color: #f5f4fa;
-  --hero-footer-backgroun-color: #2f303a;
-  --primary-backgroun-color: #ffffff;
-  --margin30px: 30px;
-}
-
-body {
-  font-family: "Roboto", "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  background-color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

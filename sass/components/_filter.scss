@@ -7,11 +7,9 @@
 }
 
 .filter__button {
+    @include font(500, 16, 1.62, null);
     padding: 6px 22px;
     font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
     text-align: center;
     border-radius: 4px;
     border: none;

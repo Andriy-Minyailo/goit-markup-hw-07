@@ -12,10 +12,8 @@
     margin-right: 93px;
 }
 .nav__list {
+    @include font(500, null, 1.14, 0.02em);
     display: flex;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
     list-style: none;
 
     & li+li {
@@ -24,8 +22,7 @@
 }
 
 .nav__link {
-    display: flex;
-    align-items: center;
+    @include flexCenter($jc:null);
     padding: 32px 0;
     position: relative;
     text-decoration: none;
@@ -80,10 +77,8 @@
 }
 
 .contact {
+    @include font(500, null, 1.14, 0.02em);
     display: flex;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
     list-style: none;
 
     & li+li {
@@ -92,8 +87,7 @@
 }
 
 .contact__link {
-    display: flex;
-    align-items: center;
+    @include flexCenter($jc: null);
     padding: 32px 0;
     color: var(--primary-text-color);
     text-decoration: none;

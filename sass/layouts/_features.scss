@@ -10,7 +10,7 @@
 }
 
 .features__container-icon {
-    display: flex;
+    @include flexCenter();
     padding: 25px 100px;
     margin-bottom: var(--margin30px);
     justify-content: center;
@@ -19,9 +19,8 @@
 }
 
 .features__titel {
+    @include font(700, null, 1.41, null);
     margin-bottom: 10px;
-    font-weight: 700;
-    line-height: 1.14;
     text-transform: uppercase;
     color: var(--primary-text-title);
 }

@@ -7,10 +7,8 @@
 }
 
 .work__titel {
+    @include font(700, 36, 1.17, null);
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
     text-align: center;
     color: var(--primary-text-title);
 }
@@ -20,6 +18,7 @@
 }
 
 .work__text {
+    @include font(700, 14, 1.14, null);
     display: block;
     position: absolute;
     bottom: 0;
@@ -27,9 +26,6 @@
     width: 100%;
     padding-top: 27px;
     padding-bottom: 27px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
     text-align: center;
     text-transform: uppercase;
     color: var(--primary-backgroun-color);
