@@ -60,10 +60,10 @@ li .address__contact {
 .our-social__list {
     width: 44px;
     height: 44px;
-}
 
-.our-social__list:not(:last-child) {
-    margin-right: 10px;
+    &:not(:last-child) {
+        margin-right: 10px;
+}
 }
 
 .our-social__link {
@@ -76,11 +76,11 @@ li .address__contact {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.our-social__link:hover,
-.our-social__link:focus {
+    &:hover,
+    &:focus {
     background-color: var(--accent-color);
+    }
 }
 
 .our-social__icon {
@@ -116,24 +116,28 @@ li .address__contact {
     outline: none;
     color: var(--primary-backgroun-color);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.subscription__input:focus-within {
-    border-color: var(--accent-color);
-}
-
-.subscription__input::placeholder {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
+    &:focus-within {
+        border-color: var(--accent-color);
+    }
+    &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 .subscription__button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
     width: 200px;
     height: 50px;
     margin-left: 12px;
@@ -142,11 +146,6 @@ li .address__contact {
     background-color: var(--accent-color);
     border: none;
     cursor: pointer;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
     color: var(--primary-backgroun-color);
 }
 
